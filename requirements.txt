@@ -1,3 +1,7 @@
 requests
 python-dotenv
 pytest
+openai
+gradio
+langchain
+snowflake-connector-python
