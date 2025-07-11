@@ -1,4 +1,8 @@
 import pytest
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from app import haversine, build_prompt, gym_finder_pipeline
 
 # Optional: use mock if you're testing API-related functions
