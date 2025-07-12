@@ -57,7 +57,7 @@ def test_create_map():
 @patch("app.get_gpt_recommendations")
 @patch("app.create_map")
 def test_gym_finder_pipeline(mock_map, mock_gpt, mock_gyms):
-    mock_gyms.return_value = [{"name": "Mock Gym", "lt": 0, "lng": 0}]
+    mock_gyms.return_value = [{"name": "Mock Gym", "lat": 0, "lng": 0}]
     mock_gpt.return_value = "GPT says: do squats"
     mock_map.return_value = "<iframe>Map</iframe>"
 
