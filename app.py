@@ -16,7 +16,7 @@ import folium
 from openai import OpenAI
 import snowflake.connector
 import bcrypt
-
+import config as snowflake_config # Import the config file
 
 # Load environment variables (keeping this for consistency, but will use direct keys)
 load_dotenv()
